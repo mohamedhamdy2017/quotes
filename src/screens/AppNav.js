@@ -11,13 +11,6 @@ const AppNav = createStackNavigator({
     itemList: {
         screen: QuotesListItem
     }
-},{
-     navigationOptions : ({navigation}) => {
-        const { routeName } = navigation.state.routes[navigation.state.index]
-        return{
-        headerTitle:  routeName
-    }
-}
 
 })
 
